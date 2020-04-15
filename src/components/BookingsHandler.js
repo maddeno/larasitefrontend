@@ -58,7 +58,9 @@ class BookingsHandler extends React.Component {
             return Promise.all([resp1.json(), resp2.json()]) 
         })
         .then(([resp1, resp2]) => {
-            this.setState({
+            console.log(resp1)
+            console.log(resp2)
+            return this.setState({
                 gigReqs: resp1,
                 lesReqs: resp2
             })
@@ -66,9 +68,6 @@ class BookingsHandler extends React.Component {
     }
 
     updateGigs = (gigToUpdate) => {
-        this.setState({
-            isLoading: true
-        })
         const reqObj = {
             method: 'PATCH',
             headers: {
@@ -83,7 +82,10 @@ class BookingsHandler extends React.Component {
         }
         fetch(`http://localhost:3000/gigs/${gigToUpdate.id}`, reqObj)
         .then(resp => resp.json())
-        .then(() => this.updateState())
+        .then(gig => {
+            console.log(gig)
+            return this.updateState()
+        })
     }
 
 
@@ -102,7 +104,10 @@ class BookingsHandler extends React.Component {
         }
         fetch(`http://localhost:3000/lessons/${lessonToUpdate.id}`, reqObj)
         .then(resp => resp.json())
-        .then(() => this.updateState()) 
+        .then(lesson => {
+            console.log(lesson)
+            return this.updateState()
+        }) 
     }
 
 

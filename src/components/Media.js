@@ -17,7 +17,7 @@ class Media extends React.Component {
                 <Grid relaxed centered columns={4}>
                     <Grid.Column>
                         <Card>
-                            <Card.Header>Bach Sonata in A Minor</Card.Header>
+                            <Card.Header as='h4'>Bach Sonata in A Minor</Card.Header>
                             <Card.Content>
                                 <Embed
                                     id='DNj_gXD6dnU'
@@ -30,7 +30,7 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header>Prokofiev Violin Concerto No. 2 in G Minor</Card.Header>
+                            <Card.Header as='h4'>Prokofiev Violin Concerto No. 2 in G Minor</Card.Header>
                             <Card.Content>
                                 <Embed 
                                     id='Ok4CzvahhgM'
@@ -43,7 +43,7 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header>Three Miniatures for Solo Violin</Card.Header>
+                            <Card.Header as='h4'>Three Miniatures for Solo Violin</Card.Header>
                             <Card.Content>
                                 <Embed 
                                     id='znhVnf8iFcc'
@@ -56,10 +56,49 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header>Bach Sonata in G Minor: Adagio</Card.Header>
+                            <Card.Header as='h4'>Bach Sonata in G Minor: Presto</Card.Header>
+                            <Card.Content>
+                                <Embed 
+                                    id='eJLyVlaonYY'
+                                    placeholder=''
+                                    source='youtube'
+                                />
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+
+                    <Grid.Column>
+                        <Card>
+                            <Card.Header as='h4'>Bach Sonata in G Minor: Adagio</Card.Header>
                             <Card.Content>
                                 <Embed 
                                     id='GqRX6TDxR5s'
+                                    placeholder=''
+                                    source='youtube'
+                                />
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+
+                    <Grid.Column>
+                        <Card>
+                            <Card.Header as='h4'>Michael Shingo Crawford: Teru Teru Bouzu</Card.Header>
+                            <Card.Content>
+                                <Embed 
+                                    id='NG9Fa1rMe9I'
+                                    placeholder=''
+                                    source='youtube'
+                                />
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+
+                    <Grid.Column>
+                        <Card>
+                            <Card.Header as='h4'>Prokofiev Violin Concerto No. 2 Movement 3</Card.Header>
+                            <Card.Content>
+                                <Embed 
+                                    id='WhmT5nqDvx8'
                                     placeholder=''
                                     source='youtube'
                                 />

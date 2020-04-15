@@ -21,11 +21,11 @@ class Footer extends React.Component {
                     <Divider inverted section />
                     <Image centered size='mini' circular src={require('../assets/lara_logo.jpg')} />
                     <List horizontal inverted divided link size='small'>
-                        <List.Item as='a' href='#'>
-                        Site Map
+                        <List.Item as='a' href="https://www.facebook.com/lara.madden.10">
+                        Facebook
                         </List.Item>
-                        <List.Item as='a' href='#'>
-                        Contact Us
+                        <List.Item as='a' href="https://www.linkedin.com/in/lara-madden-22183210b/">
+                        Linkedin
                         </List.Item>
                         <List.Item as='a' href='#'>
                         Terms and Conditions

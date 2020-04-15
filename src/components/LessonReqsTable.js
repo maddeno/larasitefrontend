@@ -1,20 +1,10 @@
-import React from 'react'
-import {Table, Button } from 'semantic-ui-react'
+import React from 'react';
+import {Table, Button } from 'semantic-ui-react';
 
 class LessonReqsTable extends React.Component {
     constructor() {
-        super()
-        this.state = {
-            reqs: null
-        }
+        super();
     }
-
-    componentDidMount(){
-        this.setState({
-            reqs: this.props.reqs
-        })
-    }
-
 
     handleClick = (event) => {
         const lessonToUpdate = {
@@ -54,9 +44,9 @@ class LessonReqsTable extends React.Component {
                 </Table.Header>
 
                 <Table.Body>
-                    { this.state.reqs ? this.state.reqs.map(req => {
-                        return this.parseRow(req)
-                    }): null }
+                    {this.props.reqs.map(req => {
+                        return this.parseRow(req);
+                    })}
                 </Table.Body>
 
             </Table>
