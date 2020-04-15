@@ -2,14 +2,8 @@
 import React from 'react'
 import {
   Container,
-  Divider,
-  // Dropdown,
-  Grid,
   Header,
   Image,
-  List,
-  // Menu,
-  Segment,
   Button
 } from 'semantic-ui-react'
 import BookingOptions from './BookingOptions'
@@ -46,8 +40,7 @@ class Homepage extends React.Component {
               Currently based out of Providence, Lara accepts bookings in Rhode Island, Massachusetts, and Illinois. 
             </h4>
             <Button color="black" onClick={this.toggleBookingOptions}>Book Now</Button> 
-            <Button as={NavLink} to="/requests">Pending Requests(for Lara)</Button>
-            <Button as={NavLink} to="/validation">Validation</Button>
+            <Button as={NavLink} to="/bookings">Pending Requests(for Lara)</Button>
             {this.state.bookingOptions === true? <BookingOptions/> : null}
         </Container>
   

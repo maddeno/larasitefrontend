@@ -1,17 +1,8 @@
 import React from 'react'
 import {
   Container,
-  Divider,
-  // Dropdown,
-  Grid,
   Header,
-  Image,
-  List,
-  // Menu,
-  Segment,
-  GridColumn,
   Button,
-  Checkbox,
   Form
 } from 'semantic-ui-react'
 
@@ -20,7 +11,7 @@ class LessonForm extends React.Component {
     constructor() {
       super()
       this.state = {
-        admin_id: 2,
+        admin_id: 5,
         status: 'requested'
       }
     }

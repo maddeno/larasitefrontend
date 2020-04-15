@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon, Label, Menu, Table, Button } from 'semantic-ui-react'
+import {Table, Button } from 'semantic-ui-react'
 
 class LessonReqsTable extends React.Component {
     constructor() {
@@ -14,6 +14,7 @@ class LessonReqsTable extends React.Component {
             reqs: this.props.reqs
         })
     }
+
 
     handleClick = (event) => {
         const lessonToUpdate = {

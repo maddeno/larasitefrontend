@@ -1,22 +1,13 @@
 import React from 'react'
 import {
   Container,
-  Divider,
-  // Dropdown,
-  Grid,
   Header,
-  Image,
-  List,
-  // Menu,
-  Segment,
-  GridColumn,
   Button,
-  Checkbox,
   Form
 } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom';
 
-class AdminValidation extends React.Component {
+class LoginForm extends React.Component {
 
     constructor() {
       super()
@@ -30,6 +21,11 @@ class AdminValidation extends React.Component {
             [event.target.name]: event.target.value 
         })
     }
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+        this.props.login(this.state)
+    }
   
     render() {
         return (
@@ -38,7 +34,7 @@ class AdminValidation extends React.Component {
                 
             <Container text style={{ marginTop: '7em'}} floated="right">
                 <Header as='h2'>Please Log In</Header>
-                <Form>
+                <Form onSubmit={this.handleSubmit}>
                     <Form.Field>
                         <label>Email</label>
                         <input name="email" placeholder='email' onChange={this.handleChange} />
@@ -56,4 +52,4 @@ class AdminValidation extends React.Component {
     }
 }
   
-export default AdminValidation
+export default LoginForm

@@ -1,14 +1,9 @@
 import React from 'react';
 import {
   Container,
-  // Divider,
   Dropdown,
-  // Grid,
-  // Header,
   Image,
-  // List,
   Menu,
-  Segment,
 } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom';
 
@@ -43,7 +38,8 @@ class Navbar extends React.Component {
             <Menu.Item as={NavLink} to="/">Home</Menu.Item>
             <Menu.Item as={NavLink} to="/bio">Biography/Credentials</Menu.Item>
             <Menu.Item as={NavLink} to="/gallery">Gallery</Menu.Item>
-            <Menu.Item as={NavLink} to="/media">Media</Menu.Item>
+            <Menu.Item as={NavLink} to="/media">Media</Menu.Item>\
+            <Menu.Item as={NavLink} to="/calendar">Upcoming Performances</Menu.Item>
 
             <Dropdown item simple text='Work with Lara'>
               <Dropdown.Menu>

@@ -1,15 +1,7 @@
 import React from 'react'
 import {
   Container,
-  Divider,
-  // Dropdown,
-  Grid,
   Header,
-  Image,
-  List,
-  // Menu,
-  Segment,
-  Button
 } from 'semantic-ui-react'
 import GigReqsTable from './GigReqsTable';
 import LessonReqsTable from './LessonReqsTable';
@@ -18,38 +10,57 @@ import LessonReqsTable from './LessonReqsTable';
 const gigURL = 'http://localhost:3000/gigs';
 const lessonURL = 'http://localhost:3000/lessons';
 
-class RequestsHandler extends React.Component {
+class BookingsHandler extends React.Component {
     constructor() {
         super()
         this.state = {
-            isLoading: false,
             gigReqs: [],
             lesReqs: []
         }
     }
 
     componentDidMount(){
-        Promise.all([fetch(gigURL), fetch(lessonURL)])
+        Promise.all([fetch(gigURL, {
+            method: 'GET',
+            headers: {
+                Authorization: `Bearer ${this.props.token}`
+            }
+        }), fetch(lessonURL, {
+            method: 'GET',
+            headers: {
+                Authorization: `Bearer ${this.props.token}`
+            }
+        })])
         .then(([resp1, resp2]) => { 
             return Promise.all([resp1.json(), resp2.json()]) 
         })
         .then(([resp1, resp2]) => {
             this.setState({
-                gigReqs: resp1.filter(req => {return req.status === 'requested'}),
-                lesReqs: resp2.filter(req => {return req.status === 'requested'}) 
+                gigReqs: resp1,
+                lesReqs: resp2
             })
         });
     }
 
     updateState = () => {
-        Promise.all([fetch(gigURL), fetch(lessonURL)])
+        Promise.all([fetch(gigURL, {
+            method: 'GET',
+            headers: {
+                Authorization: `Bearer ${this.props.token}`
+            }
+        }), fetch(lessonURL, {
+            method: 'GET',
+            headers: {
+                Authorization: `Bearer ${this.props.token}`
+            }
+        })])
         .then(([resp1, resp2]) => { 
             return Promise.all([resp1.json(), resp2.json()]) 
         })
         .then(([resp1, resp2]) => {
             this.setState({
-                gigReqs: resp1.filter(req => {return req.status === 'requested'}),
-                lesReqs: resp2.filter(req => {return req.status === 'requested'}) 
+                gigReqs: resp1,
+                lesReqs: resp2
             })
         });
     }
@@ -61,6 +72,7 @@ class RequestsHandler extends React.Component {
         const reqObj = {
             method: 'PATCH',
             headers: {
+                Authorization: `Bearer ${this.props.token}`,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
@@ -79,6 +91,7 @@ class RequestsHandler extends React.Component {
         const reqObj = {
             method: 'PATCH',
             headers: {
+                Authorization: `Bearer ${this.props.token}`,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
@@ -110,4 +123,4 @@ class RequestsHandler extends React.Component {
 
 }
 
-export default RequestsHandler
+export default BookingsHandler

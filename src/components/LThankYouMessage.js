@@ -1,18 +1,8 @@
 import React from 'react'
 import {
   Container,
-  Divider,
-  // Dropdown,
-  Grid,
   Header,
-  Image,
-  List,
-  // Menu,
-  Segment,
-  GridColumn,
-  Button,
-  Checkbox,
-  Form
+  Button
 } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom';
 

@@ -1,40 +1,39 @@
 import React from 'react'
 import {
   Container,
-  Divider,
-  // Dropdown,
-  Grid,
   Header,
-  Image,
   List,
-  // Menu,
-  Segment,
-  GridColumn,
-  Button,
-  Checkbox,
-  Form
+  Button
 } from 'semantic-ui-react'
-import { NavLink } from 'react-router-dom';
+import PublicGigsList from './PublicGigList'
+import noGigsMessage from './NoGigsMessage'
+import NoGigsMessage from './NoGigsMessage'
 
 class Calendar extends React.Component {
-
-    constructor() {
-      super()
-      this.state = {
-
-      }
+  constructor () {
+    super()
+    this.state = {
+      publicGigs: []
     }
+  }
 
-  
-    render() {
-        return (
+  componentDidMount() {
+    fetch('http://localhost:3000/gigs/public')
+    .then(resp => resp.json())
+    .then(gigs => this.setState({
+      publicGigs: gigs
+    }))
+  }
 
-            <div>
-                
-            </div>
-        
-        )
-    }
+
+  render () {
+    return (
+      <div>
+          {this.state.publicGigs.length > 0 ? <PublicGigsList publicGigs={this.state.publicGigs}/> : <NoGigsMessage/>}
+      </div>
+    )
+  }
 }
+
   
 export default Calendar

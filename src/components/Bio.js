@@ -1,15 +1,9 @@
 import React from 'react'
 import {
   Container,
-  Divider,
-  // Dropdown,
   Grid,
   Header,
   Image,
-  List,
-  // Menu,
-  Segment,
-  GridColumn,
 } from 'semantic-ui-react'
 
 class Bio extends React.Component {

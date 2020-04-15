@@ -1,19 +1,4 @@
 import React from 'react'
-// import {
-//   Container,
-//   Divider,
-//   // Dropdown,
-//   Grid,
-//   Header,
-//   Image,
-//   List,
-//   // Menu,
-//   Segment,
-//   GridColumn,
-//   Button,
-//   Checkbox,
-//   Form
-// } from 'semantic-ui-react'
 import GigForm from './GigForm'
 import PThankYouMessage from './PThankYouMessage'
 

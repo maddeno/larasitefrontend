@@ -2,14 +2,9 @@ import React from 'react'
 import {
   Container,
   Divider,
-  // Dropdown,
-  Grid,
-  Header,
   Image,
   List,
-  // Menu,
-  Segment,
-  Button
+  Segment
 } from 'semantic-ui-react'
 
 class Footer extends React.Component {

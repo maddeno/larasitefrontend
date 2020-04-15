@@ -1,15 +1,7 @@
 import React from 'react'
 import {
   Container,
-  Divider,
-  // Dropdown,
-  Grid,
   Header,
-  Image,
-  List,
-  // Menu,
-  Segment,
-  GridColumn,
   Button,
   Checkbox,
   Form
@@ -21,7 +13,7 @@ class GigForm extends React.Component {
       super()
       this.state = {
         status: 'requested',
-        admin_id: 2,
+        admin_id: 5,
         public: false
       }
     }
