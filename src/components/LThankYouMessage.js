@@ -27,7 +27,7 @@ class LThankYouMessage extends React.Component {
                         Lara will review the details of your booking request and respond within 24 hours.
                     </h4>
 
-                    <Button color="black" onClick={() =>this.props.toggleView()}>Submit another request</Button> <Button color="black" as={NavLink} to="/">Home</Button>
+                    <Button color="black" onClick={() =>this.props.toggleView()}>Submit another request</Button> <Button color="black" as={NavLink} to="/root">Home</Button>
 
             </Container>
             </div>

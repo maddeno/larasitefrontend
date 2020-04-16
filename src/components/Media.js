@@ -17,12 +17,16 @@ class Media extends React.Component {
                 <Grid relaxed centered columns={4}>
                     <Grid.Column>
                         <Card>
-                            <Card.Header as='h4'>Bach Sonata in A Minor</Card.Header>
+                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Bach Sonata in A Minor</Card.Header><br/>
                             <Card.Content>
                                 <Embed
                                     id='DNj_gXD6dnU'
-                                    placeholder=''
+                                    placeholder={require('../assets/vid_placeholder.jpg')}
                                     source='youtube'
+                                    iframe={{
+                                        allowFullScreen: true,
+                                    }}
+                                    aspectRatio='4:3'
                                 />
                             </Card.Content>
                         </Card>
@@ -30,12 +34,16 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header as='h4'>Prokofiev Violin Concerto No. 2 in G Minor</Card.Header>
+                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em', marginRight: '1em'}} as='h4'>Prokofiev Violin Concerto No.2 in G Minor</Card.Header>
                             <Card.Content>
                                 <Embed 
                                     id='Ok4CzvahhgM'
-                                    placeholder=''
+                                    placeholder={require('../assets/vid_placeholder.jpg')}
                                     source='youtube'
+                                    iframe={{
+                                        allowFullScreen: true,
+                                    }}
+                                    aspectRatio='4:3'
                                 />
                             </Card.Content>
                         </Card>
@@ -43,12 +51,16 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header as='h4'>Three Miniatures for Solo Violin</Card.Header>
+                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Three Miniatures for Solo Violin</Card.Header><br/>
                             <Card.Content>
                                 <Embed 
                                     id='znhVnf8iFcc'
-                                    placeholder=''
+                                    placeholder={require('../assets/vid_placeholder.jpg')}
                                     source='youtube'
+                                    iframe={{
+                                        allowFullScreen: true,
+                                    }}
+                                    aspectRatio='4:3'
                                 />
                             </Card.Content>
                         </Card>
@@ -56,12 +68,17 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header as='h4'>Bach Sonata in G Minor: Presto</Card.Header>
+                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Bach Sonata in G Minor: Presto</Card.Header><br/>
                             <Card.Content>
                                 <Embed 
                                     id='eJLyVlaonYY'
-                                    placeholder=''
+                                    placeholder={require('../assets/vid_placeholder.jpg')}
                                     source='youtube'
+                                    iframe={{
+                                        allowFullScreen: true,
+                                    }}
+                                    aspectRatio='4:3'
+
                                 />
                             </Card.Content>
                         </Card>
@@ -69,12 +86,16 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header as='h4'>Bach Sonata in G Minor: Adagio</Card.Header>
+                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Bach Sonata in G Minor: Adagio</Card.Header><br/>
                             <Card.Content>
                                 <Embed 
                                     id='GqRX6TDxR5s'
-                                    placeholder=''
+                                    placeholder={require('../assets/vid_placeholder.jpg')}
                                     source='youtube'
+                                    iframe={{
+                                        allowFullScreen: true,
+                                    }}
+                                    aspectRatio='4:3'
                                 />
                             </Card.Content>
                         </Card>
@@ -82,12 +103,16 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header as='h4'>Michael Shingo Crawford: Teru Teru Bouzu</Card.Header>
+                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Michael Shingo Crawford: Teru Teru Bouzu</Card.Header>
                             <Card.Content>
                                 <Embed 
                                     id='NG9Fa1rMe9I'
-                                    placeholder=''
+                                    placeholder={require('../assets/vid_placeholder.jpg')}
                                     source='youtube'
+                                    iframe={{
+                                        allowFullScreen: true,
+                                    }}
+                                    aspectRatio='4:3'
                                 />
                             </Card.Content>
                         </Card>
@@ -95,12 +120,16 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header as='h4'>Prokofiev Violin Concerto No. 2 Movement 3</Card.Header>
+                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Prokofiev Violin Concerto No. 2 Movement 3</Card.Header>
                             <Card.Content>
                                 <Embed 
                                     id='WhmT5nqDvx8'
-                                    placeholder=''
+                                    placeholder={require('../assets/vid_placeholder.jpg')}
                                     source='youtube'
+                                    iframe={{
+                                        allowFullScreen: true,
+                                    }}
+                                    aspectRatio='4:3'
                                 />
                             </Card.Content>
                         </Card>

@@ -18,7 +18,7 @@ class Bio extends React.Component {
             <Grid columns={3}> 
                 <Grid.Row>
                 <Grid.Column>
-                    <Image src={require('../assets/gallery/lara_gal_pic11.jpg')} circular style={{ marginTop: '10em', marginLeft: '4em' }} size="medium"/>
+                    <Image src={require('../assets/gallery/lara_gal_pic11.jpg')} circular style={{ marginTop: '14em', marginLeft: '4em' }} size="medium"/>
                 </Grid.Column>
 
                 <Grid.Column>
@@ -47,5 +47,4 @@ class Bio extends React.Component {
         )
     }
   }
-  
 export default Bio

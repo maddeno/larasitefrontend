@@ -1,5 +1,6 @@
 /*******************************
     User Variable Overrides
 *******************************/
-@width: 1000px;
-@height: 800px;
+@width: 1200px;
+@height: 1000px;
+@background: #000000;

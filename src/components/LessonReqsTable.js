@@ -2,9 +2,6 @@ import React from 'react';
 import {Table, Button } from 'semantic-ui-react';
 
 class LessonReqsTable extends React.Component {
-    constructor() {
-        super();
-    }
 
     handleClick = (event) => {
         const lessonToUpdate = {
@@ -23,7 +20,8 @@ class LessonReqsTable extends React.Component {
                 <Table.Cell>{req.location}</Table.Cell>
                 <Table.Cell>{req.client_name}: {req.client_email} {req.client_phone}</Table.Cell>
                 <Table.Cell>
-                    <Button color="black" id={req.id} value="accepted" onClick={this.handleClick}>Accept</Button> or <Button color="black" id={req.id} value="declined" onClick={this.handleClick}>Decline</Button>
+                    <Button color="black" id={req.id} value="accepted" onClick={this.handleClick}>Accept</Button> or 
+                    <Button color="black" id={req.id} value="declined" onClick={this.handleClick}>Decline</Button>
                 </Table.Cell>
             </Table.Row>
         )
@@ -31,7 +29,7 @@ class LessonReqsTable extends React.Component {
 
     render(){
         return (
-            <Table celled>
+            <Table width={10} celled>
                 <Table.Header>
                 <Table.Row>
                     <Table.HeaderCell>Date Requested</Table.HeaderCell>

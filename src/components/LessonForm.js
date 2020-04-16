@@ -53,12 +53,9 @@ class LessonForm extends React.Component {
             <Container text style={{ marginTop: '7em'}} floated="right">
                 <Header as='h1'>Book a Lesson</Header>
                     <h4>
-                        Lara has experience with students between the ages of 3 and 75.  
+                        Lara has experience with students between the ages of 3 and 75. She offers 30 minute, 45 minute, and 60 minutes lessons typically priced at $25, $37.50, and $50 respectively. 
                     </h4>
-
-                
                 <Form onSubmit={this.createLesson}>
-
                     <Form.Group widths='equal'>
                         <Form.Input name="client_name" fluid label='Name' placeholder='First and Last' onChange={this.handleChange} />
                         <Form.Input name="client_email" fluid label='Email' placeholder='Email Address' onChange={this.handleChange} />

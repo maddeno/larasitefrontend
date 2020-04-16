@@ -6,7 +6,7 @@ import 'semantic-ui-less/semantic.less'
 import Homepage from './components/Homepage';
 import Navbar from './components/Navbar';
 import Gallery from './components/Gallery';
-import Bio from './components/Bio';
+import Credentials from './components/Credentials';
 import Footer from './components/Footer';
 import Performances from './components/Performances';
 import Lessons from './components/Lessons';
@@ -28,9 +28,9 @@ class App extends React.Component {
       <Router>
         <div>
           <Navbar />
-          <Route exact path="/" component={Homepage} />
+          <Route exact path="/root" component={Homepage} />
           <Route exact path="/gallery" component={Gallery}/>
-          <Route exact path="/bio" component={Bio}/>
+          <Route exact path="/credentials" component={Credentials}/>
           <Route exact path="/media" component={Media}/>
           <Route exact path="/performances" component={Performances}/>
           <Route exact path="/lessons" component={Lessons}/>
