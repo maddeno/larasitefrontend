@@ -3,7 +3,9 @@ import {
   Container,
   Header,
   List,
+  Button
 } from 'semantic-ui-react'
+import { NavLink } from 'react-router-dom';
 
 class PublicGigsList extends React.Component {
 
@@ -24,6 +26,7 @@ parseGigs = (gig) => {
         <Container text style={{ marginTop: '7em'}} >
         <Header as='h1'>Lara's Upcoming Performances:</Header>
           {this.props.publicGigs.map(gig => {return this.parseGigs(gig)})}
+          <Button color="black" as={NavLink} to="/">Home</Button>
         </Container>
       </div>
     )

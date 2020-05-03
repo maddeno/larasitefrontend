@@ -1,68 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# README
 
-## Available Scripts
+Lara's Website
 
-In the project directory, you can run:
+Quick Links:
 
-### `yarn start`
+Back-end Repo: https://github.com/maddeno/larasitefrontend
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Demo: https://drive.google.com/open?id=1tj2AR-t9BMg9dqSy0U-fYLffZWxYDoDB
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Technologies:
 
-### `yarn test`
+React, React-Router, Semantic UI, JWT
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This app is a professional website for my sister, Lara. She is a concert violinist / music teacher, and needed her own website as a promotional tool and for prospective clients to book gigs or lessons. Functionality is based on Lara's specifications: she wanted to provide users with all the information they would when looking to hire a musician. Forms are available to request bookings, and contain input fields relevant for Lara to assess the job. 
 
-### `yarn build`
+The React front-end features components that render Lara's promotional information. The homepage is consists of a brief description of her musical philosophy and available services. A biography component details her education and experience, and includes a more detailed resume. There is a gallery of images and a page of embedded videos from Lara's youtube channel so that users can hear her play. 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The most important functionality is the forms; users have access to forms for booking eithr gigs or lessons. Users are prompted to enter their contact information and the details of the job. Upon submitting a form a new instance of gig or lesson is created on the back-end, and from there Lara can review the details of the job. 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+This app is intended as a first point-of-contact between Lara and her prospective clients; if further communication is ruquired after Lara receives a booking request she can handle that via the contact information entered in the form. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Lara can also update the "status" attribute of her bookings. All gigs and lessons are instantiated with a status of "requested". She can navigate to the Bookings Handler component, which is hidden behind JWT Authentication. This component renders all gigs and lessons with a status of "requested". After logging in, Lara can update the bookings to "accepted" or "declined".
 
-### `yarn eject`
+The last major component is the Upcoming Performances Calendar. This renders the time, date, and location of upcoming gigs if they meet a few conditions. Users filling out the gig form have the option to mark their event as "public". If a gig has been marked public, and it has been "accepted" by Lara, then it will appear in Performance Calendar. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+To start run ```npm start```. Follow the link at the top of the Readme to the front-end repo, and start the server by running ```rails s```.

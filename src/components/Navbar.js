@@ -30,11 +30,11 @@ class Navbar extends React.Component {
     return (
       <Menu fixed='top' inverted>
         <Container>
-          <Menu.Item as={NavLink} to="/root" header>
+          <Menu.Item as={NavLink} to="/" header>
             <Image size='mini' circular src={require('../assets/lara_logo.jpg')} style={{ marginRight: '1.5em' }} />
                
           </Menu.Item>
-          <Menu.Item as={NavLink} to="/root">Home</Menu.Item>
+          <Menu.Item as={NavLink} to="/">Home</Menu.Item>
           <Menu.Item as={NavLink} to="/credentials">Biography/Credentials</Menu.Item>
           <Menu.Item as={NavLink} to="/gallery">Gallery</Menu.Item>
           <Menu.Item as={NavLink} to="/media">Media</Menu.Item>\

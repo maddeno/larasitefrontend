@@ -7,14 +7,6 @@ import {
 import { NavLink } from 'react-router-dom';
 
 class LThankYouMessage extends React.Component {
-
-    constructor() {
-      super()
-      this.state = {
-
-      }
-    }
-
   
     render() {
         return (
@@ -27,7 +19,7 @@ class LThankYouMessage extends React.Component {
                         Lara will review the details of your booking request and respond within 24 hours.
                     </h4>
 
-                    <Button color="black" onClick={() =>this.props.toggleView()}>Submit another request</Button> <Button color="black" as={NavLink} to="/root">Home</Button>
+                    <Button color="black" onClick={() =>this.props.toggleView()}>Submit another request</Button> <Button color="black" as={NavLink} to="/">Home</Button>
 
             </Container>
             </div>

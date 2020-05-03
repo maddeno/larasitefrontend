@@ -1,12 +1,5 @@
 import React from 'react'
-import {
-  Container,
-  Header,
-  List,
-  Button
-} from 'semantic-ui-react'
 import PublicGigsList from './PublicGigList'
-import noGigsMessage from './NoGigsMessage'
 import NoGigsMessage from './NoGigsMessage'
 
 class Calendar extends React.Component {

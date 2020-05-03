@@ -28,7 +28,7 @@ class App extends React.Component {
       <Router>
         <div>
           <Navbar />
-          <Route exact path="/root" component={Homepage} />
+          <Route exact path="/" component={Homepage} />
           <Route exact path="/gallery" component={Gallery}/>
           <Route exact path="/credentials" component={Credentials}/>
           <Route exact path="/media" component={Media}/>
