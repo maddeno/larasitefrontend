@@ -4,13 +4,12 @@
 
 ![](src/assets/larasite_screenshot.png)
 
-### Quick Links:
-
 ### Back-end Repo: https://github.com/maddeno/larasitefrontend
 
 ### Demo: https://drive.google.com/open?id=1tj2AR-t9BMg9dqSy0U-fYLffZWxYDoDB
 
 ### Technologies: React, React-Router, Semantic UI, JWT
+
 
 This app is a professional website for my sister, Lara. She is a concert violinist / music teacher, and needed her own website as a promotional tool and for prospective clients to book gigs or lessons. Functionality is based on Lara's specifications: she wanted to provide users with all the information they would when looking to hire a musician. Forms are available to request bookings, and contain all the relevant input fields for Lara to assess the job. 
 
