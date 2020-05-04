@@ -2,7 +2,7 @@
 
 Lara's Website
 
-
+![](src/assets/larasite-screenshot.png)
 
 Quick Links:
 
@@ -14,9 +14,9 @@ Technologies:
 
 React, React-Router, Semantic UI, JWT
 
-This app is a professional website for my sister, Lara. She is a concert violinist / music teacher, and needed her own website as a promotional tool and for prospective clients to book gigs or lessons. Functionality is based on Lara's specifications: she wanted to provide users with all the information they would when looking to hire a musician. Forms are available to request bookings, and contain input fields relevant for Lara to assess the job. 
+This app is a professional website for my sister, Lara. She is a concert violinist / music teacher, and needed her own website as a promotional tool and for prospective clients to book gigs or lessons. Functionality is based on Lara's specifications: she wanted to provide users with all the information they would when looking to hire a musician. Forms are available to request bookings, and contain all the relevant input fields for Lara to assess the job. 
 
-The React front-end features components that render Lara's promotional information. The homepage is consists of a brief description of her musical philosophy and available services. A biography component details her education and experience, and includes a more detailed resume. There is a gallery of images and a page of embedded videos from Lara's youtube channel so that users can hear her play. 
+The React front-end features components that render Lara's promotional information. The homepage is consists of a brief description of her musical philosophy and available services. A biography component gives an overview of her education and experience, and includes a more detailed resume. There is a gallery and a page of embedded videos from Lara's youtube channel so that users can hear her play. 
 
 The most important functionality is the forms; users have access to forms for booking eithr gigs or lessons. Users are prompted to enter their contact information and the details of the job. Upon submitting a form a new instance of gig or lesson is created on the back-end, and from there Lara can review the details of the job. 
 
