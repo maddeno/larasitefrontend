@@ -2,7 +2,7 @@
 
 Lara's Website
 
-![](src/assets/larasite-screenshot.png)
+![](src/assets/larasite_screenshot.png)
 
 Quick Links:
 
