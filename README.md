@@ -4,7 +4,7 @@
 
 ![](src/assets/larasite_screenshot.png)
 
-### cQuick Links:
+### Quick Links:
 
 ### Back-end Repo: https://github.com/maddeno/larasitefrontend
 
