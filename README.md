@@ -24,7 +24,6 @@
 
 ### Installing: 
   - Clone this repo to your local machine. ```git clone git@github.com:maddeno/larasitefrontend.git```
-  - run bundle install to install required dependencies
   - run ```npm start``` to run the server.
   - to start the full app, don't forget to install the back-end: https://github.com/maddeno/larasitebackend
 
