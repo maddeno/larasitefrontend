@@ -8,6 +8,14 @@
 
 ### Demo: https://drive.google.com/open?id=1tj2AR-t9BMg9dqSy0U-fYLffZWxYDoDB
 
+### Front-end Features:
+  - React Components
+  - React-Router Navigation
+  - Conditional Rendering
+  - Semantic UI Styling
+  - Passing data through props and state
+  - Fetch
+
 ### Technologies: 
   - React 16.13.1
   - React-Router 5.1.2
