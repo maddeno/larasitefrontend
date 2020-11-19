@@ -52,33 +52,30 @@ class LessonForm extends React.Component {
                 
             <Container text style={{ marginTop: '7em'}} floated="right">
                 <Header as='h1'>Book a Lesson</Header>
-                    <h4>
+                    <h3>
                         Lara has experience with students between the ages of 3 and 75. She offers 30 minute, 45 minute, and 60 minutes lessons typically priced at $25, $37.50, and $50 respectively. 
-                    </h4>
+                    </h3>
                 <Form onSubmit={this.createLesson}>
                     <Form.Group widths='equal'>
                         <Form.Input name="client_name" fluid label='Name' placeholder='First and Last' onChange={this.handleChange} />
                         <Form.Input name="client_email" fluid label='Email' placeholder='Email Address' onChange={this.handleChange} />
-                        <Form.Input name="client_phone" fluid label='Phone' placeholder='Phone Number' onChange={this.handleChange} />
+                        <Form.Input name="client_phone" fluid label='Phone' placeholder='###-###-####' onChange={this.handleChange} />
                     </Form.Group>
 
                     <Form.Group widths='equal'>
-                        <Form.Input name="date" fluid label='Date' placeholder='MM/DD/YY' onChange={this.handleChange}/>
-                        <Form.Input name="time" fluid label='Time' placeholder='##:## am/pm' onChange={this.handleChange} />
+                        <Form.Input name="student_name" fluid label='Student Name' placeholder='Student name' onChange={this.handleChange}/>
+                        <Form.Input name="student_age" fluid label='Student Age' placeholder='Student age' onChange={this.handleChange} />
                         <Form.Input name="location" fluid label='Location' placeholder='Location'onChange={this.handleChange} />
                     </Form.Group>
 
                     <Form.Group widths='equal'>
-                        <Form.Input name="student_name" fluid label='Student name' placeholder='Student name' onChange={this.handleChange}/>
-                        <Form.Input name="student_age" fluid label='Student age' placeholder='Student age' onChange={this.handleChange} />
-                        <Form.Input name="student_experience" fluid label='Experience' placeholder='Past musical experience' onChange={this.handleChange} />
+                        <Form.TextArea name="student_experience" fluid label='Experience' placeholder="Brief description of student's past musical experience" onChange={this.handleChange} />
                     </Form.Group>
 
                     <Form.Field>
-                    <label>Goals/Expectations</label>
-                    <input name="student_goals" placeholder='Brief description of student goals and expectations' onChange={this.handleChange} />
+                        <Form.TextArea name="student_goals" fluid label='Goals/Expectations' placeholder="Brief descripton of student's goals" onChange={this.handleChange} />
                     </Form.Field>
-
+                    <br></br>
                     <Button type='submit'>Submit</Button>
                 </Form>
             </Container>

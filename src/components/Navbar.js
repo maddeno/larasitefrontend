@@ -26,6 +26,7 @@ class Navbar extends React.Component {
   }
 
 
+
   render() {
     return (
       <Menu fixed='top' inverted>

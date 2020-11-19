@@ -59,15 +59,15 @@ class GigForm extends React.Component {
                 
             <Container text style={{ marginTop: '7em'}} floated="right">
                 <Header as='h1'>Book a Performance</Header>
-                    <h4>
+                    <h3>
                         Performances are typically priced between $100 and $120 per hour depending on the requirements. Please fill out the form below and Lara will reply with an estimate shortly. 
-                    </h4>
+                    </h3>
                 <Form onSubmit={this.createGig}>
 
                     <Form.Group widths='equal'>
-                        <Form.Input name="client_name" fluid label='Name' placeholder='First and Last' onChange={this.handleChange} />
+                        <Form.Input name="client_name" fluid label='Name' placeholder="First and Last" onChange={this.handleChange} />
                         <Form.Input name="client_email" fluid label='Email' placeholder='Email Address' onChange={this.handleChange} />
-                        <Form.Input name="client_phone" fluid label='Phone' placeholder='Phone Number' onChange={this.handleChange} />
+                        <Form.Input name="client_phone" fluid label='Phone' placeholder='###-###-####' onChange={this.handleChange} />
                     </Form.Group>
 
                     <Form.Group widths='equal'>
@@ -77,24 +77,22 @@ class GigForm extends React.Component {
                     </Form.Group>
 
                     <Form.Field>
-                        <label>Location</label>
-                        <input name="location" placeholder='Location' onChange={this.handleChange} />
-                    </Form.Field>
-                    <Form.Field>
-                        <label>Description</label>
-                        <input name="description" placeholder='What type of event is this booking for?' onChange={this.handleChange} />
+                        <Form.Input name="location" fluid label='Location' placeholder='Location' onChange={this.handleChange} />
                     </Form.Field>
 
                     <Form.Field>
-                        <label>Is your event public? Details of public events will appear on Lara's Performance Calendar</label>
-                        <Checkbox name="public" label='Public' onChange={this.handleCheck} />
+                        <Form.TextArea name="description" fluid label="Description" placeholder='What type of event is this booking for?' onChange={this.handleChange} />
                     </Form.Field>
 
                     <Form.Field>
-                        <label>Repertoire</label>
-                        <input name="rep" placeholder='Specific Pieces or Music Genre' onChange={this.handleChange} />
+                        <Form.TextArea name="rep" fluid label="Repertoire" placeholder='Specific Pieces or Music Genre' onChange={this.handleChange} />
                     </Form.Field>
-
+                    <br></br>
+                    <Form.Field>
+                        <h4>Is your event open to the public? Details of public events will appear on Lara's Performance Calendar</h4>
+                        <Checkbox name="public" fluid label='Public' onChange={this.handleCheck} />
+                    </Form.Field>
+                    <br></br>
                     <Button type='submit'>Submit</Button>
                 </Form>
             </Container>

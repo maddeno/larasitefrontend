@@ -21,7 +21,8 @@ class Resume extends React.Component {
   
     render() {
         return (
-            <Grid centered> 
+                
+            <Grid centered > 
                 <Grid.Row>
                 <Grid.Column width={6} style={{ marginLeft: '7em'}}>
                     <Container text style={{ marginTop: '7em'}} floated="right">
