@@ -9,10 +9,10 @@ import Gallery from './components/Gallery';
 import Credentials from './components/Credentials';
 import Footer from './components/Footer';
 import Performances from './components/Performances';
-import Lessons from './components/Lessons';
+import Students from './components/Students';
 import Media from './components/Media';
 import AdminPages from './components/AdminPages';
-import Calendar from './components/Calendar';
+import PublicCalendar from './components/PublicCalendar';
 
 
 class App extends React.Component {
@@ -33,9 +33,9 @@ class App extends React.Component {
           <Route exact path="/credentials" component={Credentials}/>
           <Route exact path="/media" component={Media}/>
           <Route exact path="/performances" component={Performances}/>
-          <Route exact path="/lessons" component={Lessons}/>
+          <Route exact path="/students" component={Students}/>
           <Route exact path="/bookings" component={AdminPages}/>
-          <Route exact path="/calendar" component={Calendar}/>
+          <Route exact path="/calendar" component={PublicCalendar}/>
           <Footer/>
         </div>
       </Router>

@@ -36,15 +36,15 @@ class Navbar extends React.Component {
                
           </Menu.Item>
           <Menu.Item as={NavLink} to="/">Home</Menu.Item>
-          <Menu.Item as={NavLink} to="/credentials">Biography/Credentials</Menu.Item>
-          <Menu.Item as={NavLink} to="/gallery">Gallery</Menu.Item>
-          <Menu.Item as={NavLink} to="/media">Media</Menu.Item>\
+          <Menu.Item as={NavLink} to="/credentials">About</Menu.Item>
+          {/* <Menu.Item as={NavLink} to="/gallery">Gallery</Menu.Item> */}
+          <Menu.Item as={NavLink} to="/media">Listen</Menu.Item>\
           <Menu.Item as={NavLink} to="/calendar">Upcoming Performances</Menu.Item>
 
           <Dropdown item simple text='Work with Lara'>
             <Dropdown.Menu>
               <Dropdown.Item as={NavLink} to="/performances">Performances</Dropdown.Item>
-              <Dropdown.Item as={NavLink} to="/lessons">Lessons</Dropdown.Item>
+              <Dropdown.Item as={NavLink} to="/students">Lessons</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           

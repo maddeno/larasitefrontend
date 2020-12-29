@@ -26,8 +26,13 @@ class Resume extends React.Component {
                 <Grid.Row>
                 <Grid.Column width={6} style={{ marginLeft: '7em'}}>
                     <Container text style={{ marginTop: '7em'}} floated="right">
-                    <Header as='h1'>Education:</Header>
+                    <Header as='h1'>Education</Header>
                     <List>
+
+                        <List.Item>
+                            <List.Header as='h3'>Quartet Fellow Community MusicWorks 2019-Present</List.Header>
+                        </List.Item><br/>
+
                         <List.Item>
                             <List.Header as='h3'>Indiana University Jacobs School of Music</List.Header>
                             Bachelors of Music in Violin Performance 2012-2016<br/>
@@ -40,12 +45,9 @@ class Resume extends React.Component {
                             Primary Teacher: Professor Olga Kaler
                         </List.Item><br/>
                         
-                        <List.Item>
-                            <List.Header as='h3'>Quartet Fellow Community MusicWorks</List.Header>
-                        </List.Item><br/>
                     </List>
 
-                    <Header as='h1'>Summer Festivals:</Header>
+                    <Header as='h1'>Summer Festivals</Header>
                     <List>
                         <List.Item>
                             <List.Header as='h3'>Meadowmount School of Music 2009-2012</List.Header>
@@ -76,7 +78,7 @@ class Resume extends React.Component {
 
                 <Grid.Column width={6}>
                     <Container text style={{ marginTop: '7em'}} floated="right">
-                    <Header as='h1'>Orchestral Experience:</Header>
+                    <Header as='h1'>Orchestral Experience</Header>
                     <List>
                         <List.Item>
                             <List.Header as='h3'>Jacobs School of Music Baroque Orchestra 2014</List.Header>
@@ -93,7 +95,7 @@ class Resume extends React.Component {
                         </List.Item><br/>
                     </List>
 
-                    <Header as='h1'>Teaching Experience:</Header>
+                    <Header as='h1'>Teaching Experience</Header>
                     <List>
                         <List.Item>
                             <List.Header as='h3'>Mimi Zewig Violin Pedagogy 2015-2016</List.Header>
@@ -109,7 +111,7 @@ class Resume extends React.Component {
                         </List.Item><br/>
                     </List>
 
-                    <Header as="h1">Honors and Awards:</Header>
+                    <Header as="h1">Honors and Awards</Header>
                     <List>
                         <List.Item>
                             <List.Header as='h4'>Jacobs School of Music Emerging Young Artist Award</List.Header>

@@ -6,12 +6,11 @@ import {
   Form
 } from 'semantic-ui-react'
 
-class LessonForm extends React.Component {
+class StudentForm extends React.Component {
 
     constructor() {
       super()
       this.state = {
-        admin_id: 5,
         status: 'requested'
       }
     }
@@ -22,9 +21,9 @@ class LessonForm extends React.Component {
         })
     }
 
-    createLesson = (event) => {
+    createStudent = (event) => {
         event.preventDefault()
-        const newLesson = this.state
+        const newStudent = this.state
 
         const reqObj = {
             method: 'POST',
@@ -32,9 +31,9 @@ class LessonForm extends React.Component {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
             },
-            body: JSON.stringify(newLesson)
+            body: JSON.stringify(newStudent)
         }
-        fetch(`http://localhost:3000/lessons`, reqObj)
+        fetch(`http://localhost:3000/students`, reqObj)
         .then(resp => {
             return resp.json()
         }).then(respObj => {
@@ -53,9 +52,9 @@ class LessonForm extends React.Component {
             <Container text style={{ marginTop: '7em'}} floated="right">
                 <Header as='h1'>Book a Lesson</Header>
                     <h3>
-                        Lara has experience with students between the ages of 3 and 75. She offers 30 minute, 45 minute, and 60 minutes lessons typically priced at $25, $37.50, and $50 respectively. 
+                        Lara has experience with students between the ages of 3 and 75. Teaching blerb....
                     </h3>
-                <Form onSubmit={this.createLesson}>
+                <Form onSubmit={this.createStudent}>
                     <Form.Group widths='equal'>
                         <Form.Input name="client_name" fluid label='Name' placeholder='First and Last' onChange={this.handleChange} />
                         <Form.Input name="client_email" fluid label='Email' placeholder='Email Address' onChange={this.handleChange} />
@@ -65,7 +64,6 @@ class LessonForm extends React.Component {
                     <Form.Group widths='equal'>
                         <Form.Input name="student_name" fluid label='Student Name' placeholder='Student name' onChange={this.handleChange}/>
                         <Form.Input name="student_age" fluid label='Student Age' placeholder='Student age' onChange={this.handleChange} />
-                        <Form.Input name="location" fluid label='Location' placeholder='Location'onChange={this.handleChange} />
                     </Form.Group>
 
                     <Form.Group widths='equal'>
@@ -85,4 +83,4 @@ class LessonForm extends React.Component {
     }
   }
   
-  export default LessonForm
+  export default StudentForm

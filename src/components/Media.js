@@ -13,11 +13,16 @@ class Media extends React.Component {
 
     render() {
         return(
-            <div style={{ marginTop: '7em', marginLeft: '5em', marginRight: '5em'}} >
-                <Grid relaxed centered columns={4}>
+            // <div style={{ marginTop: '7em', marginLeft: '5em', marginRight: '5em'}} >
+                <Grid relaxed centered columns={4} 
+                    style={{marginTop: '5em', marginLeft: '3em', marginRight: '3em', marginBotton: '5em'}}
+                >
                     <Grid.Column>
                         <Card>
-                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Bach Sonata in A Minor</Card.Header><br/>
+                            <Card.Header 
+                                style={{color: "white", marginLeft: '1em', marginTop: '1em', marginRight: '1em', marginBotton: '3em'}} 
+                                as='h4'>Bach Sonata in A Minor
+                            </Card.Header><br/>
                             <Card.Content>
                                 <Embed
                                     id='DNj_gXD6dnU'
@@ -34,7 +39,10 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em', marginRight: '1em'}} as='h4'>Prokofiev Violin Concerto No.2 in G Minor</Card.Header>
+                            <Card.Header 
+                                style={{color: "white", marginLeft: '1em', marginTop: '1em', marginRight: '1em', marginBotton: '3em'}} 
+                                as='h4'>Prokofiev Violin Concerto No.2 in G Minor
+                            </Card.Header>
                             <Card.Content>
                                 <Embed 
                                     id='Ok4CzvahhgM'
@@ -51,7 +59,10 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Three Miniatures for Solo Violin</Card.Header><br/>
+                            <Card.Header 
+                                style={{color: "white", marginLeft: '1em', marginTop: '1em', marginBotton: '3em', marginRight: '1em'}} 
+                                as='h4'>Three Miniatures for Solo Violin
+                            </Card.Header><br/>
                             <Card.Content>
                                 <Embed 
                                     id='znhVnf8iFcc'
@@ -68,7 +79,10 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Bach Sonata in G Minor: Presto</Card.Header><br/>
+                            <Card.Header 
+                                style={{color: "white", marginLeft: '1em', marginTop: '1em', marginBotton: '3em', marginRight: '1em'}}
+                                as='h4'>Bach Sonata in G Minor: Presto
+                            </Card.Header><br/>
                             <Card.Content>
                                 <Embed 
                                     id='eJLyVlaonYY'
@@ -86,7 +100,10 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Bach Sonata in G Minor: Adagio</Card.Header><br/>
+                            <Card.Header 
+                                style={{color: "white", marginLeft: '1em', marginTop: '1em', marginBotton: '3em', marginRight: '1em'}}
+                                as='h4'>Bach Sonata in G Minor: Adagio
+                            </Card.Header><br/>
                             <Card.Content>
                                 <Embed 
                                     id='GqRX6TDxR5s'
@@ -103,7 +120,10 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Michael Shingo Crawford: Teru Teru Bouzu</Card.Header>
+                            <Card.Header 
+                                style={{color: "white", marginLeft: '1em', marginTop: '1em', marginBotton: '3em', marginRight: '1em'}}
+                                as='h4'>Michael Shingo Crawford: Teru Teru Bouzu
+                            </Card.Header>
                             <Card.Content>
                                 <Embed 
                                     id='NG9Fa1rMe9I'
@@ -120,7 +140,10 @@ class Media extends React.Component {
 
                     <Grid.Column>
                         <Card>
-                            <Card.Header style={{color: "white", marginLeft: '1em', marginTop: '1em'}} as='h4'>Prokofiev Violin Concerto No. 2 Movement 3</Card.Header>
+                            <Card.Header 
+                                style={{color: "white", marginLeft: '1em', marginTop: '1em', marginBotton: '3em', marginRight: '1em'}}
+                                as='h4'>Prokofiev Violin Concerto No. 2 Movement 3
+                                </Card.Header>
                             <Card.Content>
                                 <Embed 
                                     id='WhmT5nqDvx8'
@@ -136,7 +159,7 @@ class Media extends React.Component {
                     </Grid.Column>
                     
                 </Grid>
-            </div>
+            // </div>
         )
     }
 }

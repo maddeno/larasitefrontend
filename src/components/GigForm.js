@@ -59,9 +59,7 @@ class GigForm extends React.Component {
                 
             <Container text style={{ marginTop: '7em'}} floated="right">
                 <Header as='h1'>Book a Performance</Header>
-                    <h3>
-                        Performances are typically priced between $100 and $120 per hour depending on the requirements. Please fill out the form below and Lara will reply with an estimate shortly. 
-                    </h3>
+        
                 <Form onSubmit={this.createGig}>
 
                     <Form.Group widths='equal'>

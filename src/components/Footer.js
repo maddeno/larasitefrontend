@@ -16,11 +16,11 @@ class Footer extends React.Component {
     render(){
         return(
 
-            <Segment fixed='bottom' inverted vertical style={{ margin: '7em 0em 0em', padding: '5em 0em' }}>
+            <Segment fixed='bottom' inverted vertical style={{ margin: '7em 0em 0em', padding: '2em 0em' }}>
                 <Container textAlign='center'>
                     {/* <Divider inverted section /> */}
                     <Image centered size='mini' circular src={require('../assets/lara_logo.jpg')} />
-                    <List horizontal inverted divided link size='small'>
+                    <List horizontal inverted divided link size='medium'>
                         <List.Item as='a' href="https://www.facebook.com/lara.madden.10">
                         Facebook
                         </List.Item>

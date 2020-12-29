@@ -1,8 +1,8 @@
 import React from 'react'
-import LessonForm from './LessonForm'
-import LThankYouMessage from './LThankYouMessage'
+import StudentForm from './StudentForm'
+import SThankYouMessage from './SThankYouMessage'
 
-class Lessons extends React.Component {
+class Students extends React.Component {
 
     constructor() {
       super()
@@ -22,7 +22,7 @@ class Lessons extends React.Component {
         return (
 
             <div>
-                {this.state.submitted === true ? <LThankYouMessage toggleView={this.toggleView}/> : <LessonForm toggleView={this.toggleView} /> }
+                {this.state.submitted === true ? <SThankYouMessage toggleView={this.toggleView}/> : <StudentForm toggleView={this.toggleView} /> }
             </div>
         
         
@@ -30,4 +30,4 @@ class Lessons extends React.Component {
     }
   }
   
-  export default Lessons
+  export default Students

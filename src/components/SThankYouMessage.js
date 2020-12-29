@@ -6,7 +6,7 @@ import {
 } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom';
 
-class LThankYouMessage extends React.Component {
+class SThankYouMessage extends React.Component {
   
     render() {
         return (
@@ -28,4 +28,4 @@ class LThankYouMessage extends React.Component {
     }
 }
   
-export default LThankYouMessage
+export default SThankYouMessage
